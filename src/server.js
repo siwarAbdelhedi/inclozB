@@ -40,7 +40,7 @@ app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
 // Static files for production
 
   app.get('/', (req, res) => {
-    res.send('API is running....')
+    res.send('incluz API is running....')
   }
   ) 
 
