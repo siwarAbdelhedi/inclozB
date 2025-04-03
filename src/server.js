@@ -10,7 +10,7 @@ import { notFound, errorHandler } from './middleware/errorHandler.js'
 import userRoutes from './routes/userRoutes.js'
 // import productRoutes from './routes/productRoutes.js'
 // import orderRoutes from './routes/orderRoutes.js'
-// import uploadRoutes from './routes/uploadRoutes.js'
+import uploadRoutes from './routes/uploadRoutes.js'
 
 dotenv.config()
 connectDB()
@@ -28,8 +28,9 @@ app.use(cors({
   credentials: true
 }));
 
-// ✅ Tes routes
+// Routes
 app.use('/api/users', userRoutes)
+app.use('/api/upload', uploadRoutes)
 // app.use('/api/products', productRoutes)
 // app.use('/api/orders', orderRoutes)
 // app.use('/api/upload', uploadRoutes)
