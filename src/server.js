@@ -24,9 +24,9 @@ if (process.env.NODE_ENV === 'development') {
 app.use(express.json())
 
 app.use(cors({
-  origin: ['http://localhost:5173' , "https://incloz.com"],
+  origin: ['http://localhost:5173', 'https://incloz.com', 'https://www.incloz.com'],
   credentials: true
-}))
+}));
 
 // ✅ Tes routes
 app.use('/api/users', userRoutes)
@@ -40,7 +40,7 @@ app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
 // Static files for production
 
   app.get('/', (req, res) => {
-    res.send('incluz API is running....')
+    res.send('incloz API is running....')
   }
   ) 
 
