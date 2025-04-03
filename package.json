@@ -5,7 +5,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/server"
+    "dev": "nodemon src/server",
+    "start": "node src/server"
   },
   "author": "Siwar",
   "license": "MIT",
